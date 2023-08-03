@@ -1,0 +1,154 @@
+/* 모든 페이지에서 공통으로 사용하는 디자인 */
+
+/* 사용할 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=East+Sea+Dokdo&family=Nanum+Gothic+Coding&display=swap');
+
+/* 글씨체 적용하는 법 */
+/* font-family: 'Bagel Fat One', cursive;
+font-family: 'East Sea Dokdo', cursive;
+font-family: 'Nanum Gothic Coding', monospace; */
+
+/* h1{
+    font-family: 'Bagel Fat One', cursive;
+}
+h2{
+    font-family: 'East Sea Dokdo', cursive;
+}
+h3{
+    font-family: 'Nanum Gothic Coding', monospace;
+} 
+
+<h1>안녕하세요 Hello world!</h1> 
+<h2>안녕하세요 Hello world!</h2>
+<h3>안녕하세요 Hello world!</h3>
+*/
+
+/*  
+기본 글씨 색상  : #e3e4e6
+보조 글씨 색상  : #e3e4e68c
+강조 색상       : #bc3cd8
+
+글씨 크기       
+h1      : 56px
+h2      : 40px
+h3      : 32px
+h4      : 24px
+h5      : 16px
+body    : 18px
+button  : 16px
+*/
+
+.secondary{
+    color: #e3e4e68c;
+}
+.primary{
+    color: #e3e4e6;
+}
+.emphasis{
+    color: #bc3cd8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: lighter;
+}
+
+body{
+    font-size: 18px;
+    background-color: #010208;
+    color: #e3e4e6 ;
+}
+
+h1{
+    font-size: 56px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5, button{
+    font-size: 16px;
+}
+
+.em{
+    font-weight: bold;
+}
+.label{
+    font-size : 14px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color : #e3e4e6
+}
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 96px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    column-gap: 20px;
+}
+.nav-item{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3px;
+}
+.nav-item > .line{
+    width: 10px;
+    display : none;
+}
+
+.nav-item.active > .line{
+    display: block;
+}
+.nav-item.active > a{
+ color: #bc3cd8;
+}
+.line{
+    border-bottom: 3px solid #bc3cd8;
+}
+.icon-btn{
+    background-color: #e3e4e68c;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 10px;
+    cursor:pointer
+  }
+.contacts{
+    display : flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    
+}
+.icon-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-wrap{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    padding: 90px 0;
+}
